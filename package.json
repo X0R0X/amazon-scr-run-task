@@ -1,0 +1,17 @@
+{
+  "name": "apify-call-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^1.2.1",
+    "apify-client": "^1.2.2",
+    "got": "^11.8.2"
+  }
+}
