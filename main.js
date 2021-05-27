@@ -42,7 +42,7 @@ Apify.main(async () => {
                 break;
             }
 
-            await new Promise(x=>setTimeout(x, 1000))
+            await new Promise(x=>setTimeout(x, 1000));
         }
     }
 
@@ -51,5 +51,5 @@ Apify.main(async () => {
     const csv = await datasetClient.downloadItems('csv', {limit: maxItems, fields: fields});
 
     const kvStore = await Apify.openKeyValueStore();
-    await kvStore.setValue('OUTPUT.csv', csv);
+    await kvStore.setValue('OUTPUT.csv', csv.toString());
 });
